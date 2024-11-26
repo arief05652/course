@@ -14,7 +14,7 @@ if(isset($_POST['submit'])) {
         
         if(password_verify($password,$data['password'])) {
             $_SESSION['email'] = $email;
-            header('Location: ../view/home.php');
+            header('Location: ../view/show.php');
             die;
         } else {
             echo "password salah";

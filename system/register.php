@@ -21,6 +21,6 @@ if(isset($_POST['submit'])) {
     $users = mysqli_query($db_connect,"INSERT INTO users (name,email, password,created_at) VALUES
                             ('$name','$email','$password','$created_at')");
 
-    header('Location: ../login.php');
+    header('Location: ../index.php');
     exit;
 }
